@@ -1,8 +1,24 @@
 aid: didi-autonomous
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/didi-autonomous.png
 name: DiDi Autonomous
-description: 'DiDi Autonomous is a company surfaced as a portfolio company of softbank-vision-fund and
-  added to the API Evangelist network as a stub for enrichment. Sector: transportation. This profile is
-  a lead awaiting the enrichment pipeline.'
+description: 'DiDi Autonomous Driving (滴滴自动驾驶) is the autonomous-driving subsidiary of Chinese mobility
+  giant DiDi. Founded as an internal research unit in 2016 and spun out as an independent company in 2019,
+  it develops Level 4 self-driving technology and operates robotaxi services integrated into the DiDi
+  ride-hailing platform in Chinese cities including Shanghai and Guangzhou. In 2020 SoftBank Vision Fund
+  led a roughly $500M funding round into the unit. As a hardware- and fleet-oriented autonomous mobility
+  operator it does not currently publish a public developer or API surface; this profile tracks it as a
+  SoftBank Vision Fund portfolio company in the API Evangelist network.'
 url: https://raw.githubusercontent.com/api-evangelist/didi-autonomous/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -12,13 +28,30 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-18'
 tags:
 - Company
 - Transportation
+- Autonomous Driving
+- Robotaxi
+- Mobility
+- Self-Driving
+- Ride-Hailing
 apis: []
+common:
+- type: Website
+  name: DiDi Global
+  url: https://www.didiglobal.com/
+- type: Website
+  name: DiDi Autonomous Driving
+  url: https://www.didiglobal.com/science/autonomous-driving
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
